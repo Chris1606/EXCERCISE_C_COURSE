@@ -13,11 +13,21 @@
 int main(){
     printf("Bang cuu chuong\n");
     for (int i = 1; i<=10; i++){
-        printf("Bang cuu chuong %d\n",i);
-        for (int j =1; j<=10; j++){
+        for (int j =1; j<=5; j++){
             int times = i *j ;
-            printf("%d * %d = %d\n", i,j,times);
+            printf("%d * %d = %d\t", j,i,times);
         }
-    }
+        printf("\n");
+    } 
+    
+    printf("\n");
+
+    for (int i = 1; i<=10; i++){
+        for (int j =6; j<=10; j++){
+            int times = i *j ;
+            printf("%d * %d = %d\t", j,i,times);
+        }
+        printf("\n");
+    } 
     return 0 ; 
 }
