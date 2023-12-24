@@ -9,20 +9,19 @@
  * 
  */
 #include <stdio.h>
-#include <stdio.h>
- 
+
 int main() {
-    float n; // mark
- 
+    float n; // mark 
+
     do {
         printf("Vui long nhap diem thang 10 cua ban: ");
-        scanf("%f", &n);
- 
+        scanf("%f", &n); 
+
         if (n < 0 || n > 10 ) {
             printf("Vui long nhap lai diem cua ban\n");
         }
     } while (n < 0 || n > 10);
- 
+
     if (n >= 0 && n < 4.0) {
         printf("Thang diem 4 cua ban la 0 va duoc diem F ");
     } else if (n >= 4 && n < 5.0 ) {
@@ -42,7 +41,6 @@ int main() {
     } else if (n >= 9.5 && n <= 10) {
         printf("Thang diem 4 cua ban la 4.0 va duoc diem A+ ");
     }
- 
+
     return 0;
 }
- 

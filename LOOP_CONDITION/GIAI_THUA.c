@@ -11,7 +11,8 @@
 #include <stdio.h>
 
 int main(){
-    int n, result = 1;
+    int n;
+    int result;
 
     do {
         printf("Nhap so can tinh giai thua: ");
@@ -19,18 +20,18 @@ int main(){
 
         // Kiểm tra nếu giá trị nhập vào không hợp lệ
         if (n < 0 ) {
-            printf("Lua chon khong hop le. Vui long nhap lai!\n");
+            printf("Vui long nhap lai!\n");
         }
 
     } while (n < 0);
-    if (n==0){
-        result = 1; 
-    }else for (int i = 1; i<=n; i++){
-        result *= i ;
+    if (n == 0 ) result = 1; 
+    else {
+        for (int i = 1; i<=n; i++){
+            result *= i ;
+        }
     }
-    printf("giai thu cua %d la %d", n, result);
-
-  
+    
+    printf("giai thua cua %d la %d", n, result);
 
     return 0 ; 
 }
