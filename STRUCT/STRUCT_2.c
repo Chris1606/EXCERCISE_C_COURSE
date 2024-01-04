@@ -28,9 +28,8 @@ typedef struct Worker {
 int main() {
     Worker worker;
 
-    // Nhập thông tin của nhân viên
     printf("Vui long nhap ten nhan vien: ");
-    fgets(worker.person.name, sizeof(worker.person.name), stdin);  // Sử dụng %29s để tránh tràn bộ nhớ
+    fgets(worker.person.name, sizeof(worker.person.name), stdin);  
     puts(worker.person.name);
 
     
